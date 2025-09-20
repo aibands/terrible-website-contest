@@ -78,11 +78,26 @@ h3 {
 
 .sale-item img {
     width: 100%;
+    position: absolute;
+    z-index: 0;
+    top:0;
+    left:0;
   transform: scaleX(1.3) scaleY(0.7);
+}
+
+.sale-item h3, .sale-item h2 {
+  position: absolute;
+  z-index: 15;
+}
+
+.sale-item button {
+  position: absolute;
+  z-index: 10;
 }
 
 .sale-badge {
   position: absolute;
+  z-index: 10;
   top: 5px;
   left: 5px;
   color: white;
